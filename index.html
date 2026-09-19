@@ -15,33 +15,46 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         .card {
-            width: 90%;
-            max-width: 450px;
+            width: 100%;
+            max-width: 480px;
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 18px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 180px;
+            max-width: 80%;
+            height: auto;
+            margin: 5px auto 20px;
+            display: block;
+            border-radius: 8px;
         }
 
         h1 {
             color: #17365d;
-            margin-bottom: 5px;
+            margin: 0 0 5px;
+            font-size: 26px;
         }
 
         .subtitle {
             color: #777;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
         }
 
         .details {
             text-align: left;
             background: #f7f9fb;
             border-radius: 12px;
-            padding: 20px;
+            padding: 18px;
         }
 
         .row {
@@ -60,19 +73,44 @@
         }
 
         .value {
-            font-size: 19px;
+            font-size: 18px;
             font-weight: bold;
             margin-top: 5px;
             color: #222;
         }
 
         .verified {
-            margin-top: 25px;
+            margin-top: 22px;
             padding: 12px;
             background: #e8f5e9;
             color: #2e7d32;
             border-radius: 10px;
             font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 20px;
+            text-align: left;
+            background: #fff7ed;
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .contact h2 {
+            margin: 0 0 12px;
+            color: #17365d;
+            font-size: 19px;
+        }
+
+        .contact p {
+            margin: 9px 0;
+            font-size: 16px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
         }
     </style>
 </head>
@@ -81,9 +119,16 @@
 
     <div class="card">
 
-        <h1>EDS EMPLOYEE</h1>
-        <div class="subtitle">Employee Verification</div>
+        <!-- EDS LOGO -->
+        <img src="eds-logo.jpg" alt="EDS Logo" class="logo">
 
+        <h1>EDS EMPLOYEE</h1>
+
+        <div class="subtitle">
+            Employee Verification
+        </div>
+
+        <!-- EMPLOYEE DETAILS -->
         <div class="details">
 
             <div class="row">
@@ -108,8 +153,33 @@
 
         </div>
 
+        <!-- CENTRE MANAGER -->
+        <div class="contact">
+
+            <h2>Centre Manager</h2>
+
+            <p>
+                <strong>Name:</strong> MR. SOURABH KUMAR
+            </p>
+
+            <p>
+                <strong>Contact Number:</strong>
+                8709807814
+            </p>
+
+            <p>
+                <strong>Control Room:</strong>
+                06512481055
+            </p>
+
+        </div>
+
         <div class="verified">
-            ✓ Employee Details Verified
+            ✓ Employee Details
+        </div>
+
+        <div class="footer">
+            EDS BUNDU
         </div>
 
     </div>
